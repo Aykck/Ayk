@@ -3,8 +3,35 @@ import App from './App.vue'
 import './registerServiceWorker'
 import router from './router'
 import store from './store'
+// import ElementUI from 'element-ui'
+// import 'element-ui/lib/theme-chalk/index.css'
 
+import { Button, Select, Radio, Container, Aside, Header, Main, Menu, MenuItem,
+ MenuItemGroup, Submenu, Dropdown, DropdownItem, DropdownMenu, Row, Col, Card,
+  Table, TableColumn } from 'element-ui'
 Vue.config.productionTip = false
+// Vue.use(ElementUI)
+Vue.component(Button.name, Button)
+Vue.component(Select.name, Select)
+Vue.component(Radio.name, Radio)
+Vue.use(Container)
+Vue.use(Aside)
+Vue.use(Header)
+Vue.use(Main)
+Vue.use(Menu)
+Vue.use(MenuItem)
+Vue.use(MenuItemGroup)
+Vue.use(Submenu)
+Vue.use(Dropdown)
+Vue.use(DropdownItem)
+Vue.use(DropdownMenu)
+Vue.use(Row)
+Vue.use(Col)
+Vue.use(Card)
+Vue.use(Table)
+Vue.use(TableColumn)
+// Vue.prototype.$http = http
+
 
 new Vue({
   router,

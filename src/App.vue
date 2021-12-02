@@ -1,12 +1,27 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <!-- <p>嘉然我真的好喜欢你啊</p>
+    <el-button>嘉心糖</el-button>
+    <el-button type="info">北极星</el-button>
+    <br/>
+      <el-radio v-model="radio" label="1">嘉然</el-radio>
+      <el-radio v-model="radio" label="2">贝拉</el-radio>
+      <br/>
+      <router-link to="/">嘉然组件</router-link> |
+      <router-link to="/about">北极星组件</router-link> -->
+      <router-view />
   </div>
 </template>
+
+<script>
+  export default {
+    data () {
+      return { // eslint-disable-line no-unused-vars
+        radio: '1',
+      };
+    }
+  }
+</script>
 
 <style lang="scss">
 #app {
